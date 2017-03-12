@@ -9,8 +9,6 @@ public:
 
 	std::map<std::string, std::string> parse(const std::string& file) const;
 
-	static bool find(std::map<std::string, std::string>& map, const std::string& key, std::string& out);
-
 	static bool to_ullong(const std::string& input, unsigned long long& out);
 	static bool to_llong(const std::string& input, long long& out);
 	static bool to_long(const std::string& input, long& out);

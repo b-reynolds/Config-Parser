@@ -192,18 +192,6 @@ bool ConfigParser::to_bool(std::string input, bool& out)
 	return true;
 }
 
-bool ConfigParser::find(std::map<std::string, std::string>& map, const std::string& key, std::string& out)
-{
-	auto result = map.find(key);
-	if(result != map.end())
-	{
-		out = result->second;
-		return true;
-	}
-	return false;
-}
-
-
 bool ConfigParser::get_value(std::string& string, std::string& out)
 {
 	int begin = NULL;
